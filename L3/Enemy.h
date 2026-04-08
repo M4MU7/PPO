@@ -20,15 +20,15 @@ public:
     float get_strength() const { return strength_; }
 
     // Settery
-    void set_x(float x)        { x_ = x; }
-    void set_y(float y)        { y_ = y; }
+    void set_x(float x) { x_ = x; }
+    void set_y(float y) { y_ = y; }
     void set_strength(float s) { strength_ = s; }
 
     // Aktualizacja pozycji
     void update_position(float x, float y) { x_ += x; y_ += y; }
 
     // Czysto wirtualne metody
-    virtual void show()               = 0;
+    virtual void show() = 0;
     virtual void attack(float factor) = 0;
-    virtual void make_sound()         = 0;
+    virtual void make_sound() = 0;
 };

@@ -11,7 +11,7 @@ public:
     Werewolf(float x, float y, float s, float r) : Enemy(x, y, s), radius_(r) {}
     ~Werewolf() override { std::cout << "Werewolf destroyed" << std::endl; }
 
-    float get_radius() const  { return radius_; }
+    float get_radius() const { return radius_; }
     void  set_radius(float s) { radius_ = s; }
 
     void show() override;

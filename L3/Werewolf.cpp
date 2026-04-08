@@ -4,15 +4,15 @@
 void Werewolf::show()
 {
     std::cout << "The Werewolf is at point ("
-              << x_ << "," << y_
-              << ") and its radius is " << radius_
-              << std::endl;
+        << x_ << "," << y_
+        << ") and its radius is " << radius_
+        << std::endl;
 }
 
 void Werewolf::attack(float factor)
 {
-    strength_ -= factor * strength_;   // siła spada o factor * strength
-    radius_   *= 1.5f;                 // zasięg ręki rośnie 1.5x
+    strength_ -= factor * strength_;  
+    radius_ *= 1.5f;                 
     make_sound();
 }
 

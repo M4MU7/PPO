@@ -4,15 +4,15 @@
 void Harpy::show()
 {
     std::cout << "The Harpy is at point ("
-              << x_ << "," << y_
-              << ") and its height is " << height_
-              << std::endl;
+        << x_ << "," << y_
+        << ") and its height is " << height_
+        << std::endl;
 }
 
 void Harpy::attack(float factor)
 {
-    strength_ -= factor * strength_;   // siła spada o factor * strength
-    height_    = 1.85f;                // obniżenie lotu
+    strength_ -= factor * strength_;  
+    height_ = 1.85f;                
     make_sound();
 }
 
