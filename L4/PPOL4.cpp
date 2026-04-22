@@ -11,36 +11,36 @@ int main() {
     Point<int> heroPositionInt(3, 5);
     Point<int> enemyPositionInt(9, 13);
 
-    std::cout << "Pozycja bohatera: ";
+    std::cout << "pozycja bohatera: ";
     heroPositionInt.display();
     std::cout << std::endl;
 
-    std::cout << "Pozycja wroga: ";
+    std::cout << "pozycja wroga: ";
     enemyPositionInt.display();
     std::cout << std::endl;
 
     Comparison<int> comparisonInt(heroPositionInt, enemyPositionInt);
     comparisonInt.displayBothPoints();
     comparisonInt.calculateDistance();
-    std::cout << "Odleglosc (int): " << comparisonInt.getSolution() << std::endl;
+    std::cout << "odleglosc: " << comparisonInt.getSolution() << std::endl;
 
       std::cout << "\n double" << std::endl;
 
     Point<double> heroPositionDouble(1.5, 2.5);
     Point<double> enemyPositionDouble(7.5, 10.5);
 
-    std::cout << "Pozycja bohatera: ";
+    std::cout << "pozycja bohatera: ";
     heroPositionDouble.display();
     std::cout << std::endl;
 
-    std::cout << "Pozycja wroga: ";
+    std::cout << "pozycja wroga: ";
     enemyPositionDouble.display();
     std::cout << std::endl;
 
     Comparison<double> comparisonDouble(heroPositionDouble, enemyPositionDouble);
     comparisonDouble.displayBothPoints();
     comparisonDouble.calculateDistance();
-    std::cout << "Odleglosc (double): " << comparisonDouble.getSolution() << std::endl;
+    std::cout << "odleglosc (double): " << comparisonDouble.getSolution() << std::endl;
 
     std::cout << "\nmetody int " << std::endl;
     comparisonInt.displayAllInfo();
@@ -50,13 +50,13 @@ int main() {
     comparisonDouble.displayAllInfo();
 
 
-    std::cout << "\losowe punkty int" << std::endl;
+    std::cout << "\nlosowe punkty int" << std::endl;
 
     Point<int> randomIntPoint1(0, 0);
     Point<int> randomIntPoint2(0, 0);
 
-    generateRandomPoint(randomIntPoint1);          // zakres 0.0 - 50.0
-    generateRandomPoint(randomIntPoint2, 10, 40);  // zakres podany przez uzytkownika
+    generateRandomPoint(randomIntPoint1);
+    generateRandomPoint(randomIntPoint2, 10, 40);  
 
     std::cout << "Losowy punkt: ";
     randomIntPoint1.display();
@@ -75,14 +75,14 @@ int main() {
     Point<double> randomDoublePoint1(0.0, 0.0);
     Point<double> randomDoublePoint2(0.0, 0.0);
 
-    generateRandomPoint(randomDoublePoint1);               // zakres 0.0 - 50.0
-    generateRandomPoint(randomDoublePoint2, 5.0, 25.0);    // zakres podany przez uzytkownika
+    generateRandomPoint(randomDoublePoint1);
+    generateRandomPoint(randomDoublePoint2, 5.0, 25.0);
 
-    std::cout << "Losowy punkt: ";
+    std::cout << "losowy punkt: ";
     randomDoublePoint1.display();
     std::cout << std::endl;
 
-    std::cout << "Losowy punk: ";
+    std::cout << "losowy punk: ";
     randomDoublePoint2.display();
     std::cout << std::endl;
 
