@@ -3,13 +3,13 @@
 #include <iostream>
 
 template <typename T>
-class Point {
+class Point
+{
 private:
     T _x;
     T _y;
 
 public:
-
     Point(T x, T y);
 
     ~Point();
@@ -25,36 +25,41 @@ public:
     void display() const;
 };
 
-
 template <typename T>
 Point<T>::Point(T x, T y) : _x(x), _y(y) {}
 
 template <typename T>
-Point<T>::~Point() {
-  std::cout << "Point (" << _x << ", " << _y << ") zostal usuniety." << std::endl;
+Point<T>::~Point()
+{
+    std::cout << "point" << _x << ", " << _y << "usuniety" << std::endl;
 }
 
 template <typename T>
-T Point<T>::getX() const {
+T Point<T>::getX() const
+{
     return _x;
 }
 
 template <typename T>
-T Point<T>::getY() const {
+T Point<T>::getY() const
+{
     return _y;
 }
 
 template <typename T>
-void Point<T>::setX(T x) {
+void Point<T>::setX(T x)
+{
     _x = x;
 }
 
 template <typename T>
-void Point<T>::setY(T y) {
+void Point<T>::setY(T y)
+{
     _y = y;
 }
 
 template <typename T>
-void Point<T>::display() const {
+void Point<T>::display() const
+{
     std::cout << "(" << _x << ", " << _y << ")";
 }
